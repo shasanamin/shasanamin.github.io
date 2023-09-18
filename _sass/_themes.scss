@@ -8,24 +8,24 @@
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
   --global-theme-color: #{$purdue-gold-color};
-  --global-hover-color: #{$purdue-gold-color};
+  --global-hover-color: #{$purdue-gold--color};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
-  --global-card-bg-color: #{$light-purdue-gold-color};
+  --global-card-bg-color: #{$white-color};
 
   --global-tip-block: #42b983;
-  --global-tip-block-bg: #{$light-purdue-gold-color};;
+  --global-tip-block-bg: #e2f5ec;
   --global-tip-block-text: #215d42;
   --global-tip-block-title: #359469;
   --global-warning-block: #e7c000;
   --global-warning-block-bg: #fff8d8;
   --global-warning-block-text: #6b5900;
   --global-warning-block-title: #b29400;
-  --global-danger-block: #{$light-purdue-gold-color};;
+  --global-danger-block: #c00;
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
