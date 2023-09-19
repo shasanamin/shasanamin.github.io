@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2020-09-19 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Paper on using deep generative models to enhance predictive performance accepted at IEEE ICDM Workshops. Looking forward to present it in Italy!
