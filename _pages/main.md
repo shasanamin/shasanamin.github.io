@@ -12,8 +12,9 @@ profile:
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
   #   <p>Your City, State 12345</p>
-  address: >
-    <p>PhD Student in CS</p>
+  social_top: true
+  note: >
+    <p>PhD Student in Computer Science<p>
     <p>Purdue University</p>
 
 

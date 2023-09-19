@@ -118,9 +118,6 @@ blockquote {
   width: 100%;
 
   .address {
-    //
-    text-align: center;
-    //
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
@@ -326,6 +323,32 @@ blockquote {
 
   .contact-note {
     font-size: 0.8rem;
+  }
+}
+
+.social-top {
+  text-align: center;
+
+  .contact-icons {
+    font-size: 2rem;
+
+    a {
+      i::before {
+        color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+
+  .note {
+    font-size: 1rem;
+    font-family: monospace;
   }
 }
 
