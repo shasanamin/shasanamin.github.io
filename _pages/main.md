@@ -5,13 +5,16 @@ permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
-  align: right
-  image: pp_ugrad.png
-  image_circular: false # crops the image to make it circular
+  align: left
+  image: pp_ugrad_square.png
+  image_circular: true # crops the image to make it circular
   # address: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
   #   <p>Your City, State 12345</p>
+  address: >
+    <p>PhD Student in Computer Science</p>
+    <p>Purdue University</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
