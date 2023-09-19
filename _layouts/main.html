@@ -29,19 +29,19 @@ layout: default
               alt=page.profile.image
               cache_bust=true -%}
             {% endif -%}
-            <header class="post-header">
-              <h1 class="post-title">
-                {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</span>{%- else -%}{{ site.title }}{%- endif %}
-              </h1>
-            </header>
-            {%- if page.profile.social %}
+            {%- if page.profile.intro %}
             <div class="social-top">
+              <div class="title">
+                {Hasan Amin}
+              </div>              
               <div class="contact-icons">
                 {% include social.html %}
               </div>
+              {%- if page.profile.intro %}
               <div class="note">
                 {{ page.profile.note }}
               </div>
+              {%- endif %}
             </div>
             {%- endif %}
             {%- if page.profile.address %}

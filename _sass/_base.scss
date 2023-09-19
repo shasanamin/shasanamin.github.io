@@ -328,6 +328,12 @@ blockquote {
 
 .social-top {
   text-align: center;
+  
+  .title {
+    font-size: 3rem;
+    font-family: cursive;  //monospace
+    font-weight: bold;
+  }
 
   .contact-icons {
     font-size: 2rem;

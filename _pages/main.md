@@ -12,7 +12,7 @@ profile:
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
   #   <p>Your City, State 12345</p>
-  social: true
+  intro: true  # social and other details included with profile (instead of in navbar or bottom)
   note:
 
 
