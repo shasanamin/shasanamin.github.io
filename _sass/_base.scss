@@ -331,12 +331,12 @@ blockquote {
   
   .title {
     font-size: 3rem;
-    font-family: cursive;  //monospace
+    font-family: monospace;  //monospace, Arial, sans-serif, cursive
     font-weight: bold;
   }
 
   .contact-icons {
-    font-size: 2rem;
+    font-size: 3rem;
 
     a {
       i::before {

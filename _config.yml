@@ -70,7 +70,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-cv: /assets/pdf/example_pdf.pdf
+cv: /assets/pdf/cv.pdf
 cv_long: /assets/pdf/example_pdf.pdf
 
 github_username: shasanamin # your GitHub user name
