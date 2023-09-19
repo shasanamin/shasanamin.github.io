@@ -8,14 +8,12 @@ profile:
   align: left
   image: pp_ugrad_square.png
   image_circular: true # crops the image to make it circular
-  # address: >
+  address:
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
   #   <p>Your City, State 12345</p>
-  social_top: true
-  note: >
-    <p>PhD Student in Computer Science<p>
-    <p>Purdue University</p>
+  social: true
+  note:
 
 
 news: true  # includes a list of news items
