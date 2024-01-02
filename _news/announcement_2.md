@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Work done as undergraduate thesis now accepted as a full paper at IEEE ISI 2020.
+Work done as undergraduate thesis now accepted as a full paper at IEEE ISI 2020. Excited to attend my first conference.

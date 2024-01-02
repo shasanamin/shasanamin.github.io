@@ -8,10 +8,10 @@ nav_order: 5
 ---
 
 ## [Purdue University](https://cs.purdue.edu/)
-- [CS 57300: Data Mining](https://mingyin.org/CS573/Fall2023/index.html))
+- [CS 57300: Data Mining](https://mingyin.org/CS573/Fall2023/index.html)
 - CS 50023: Data Engineering I
 - CS 50025: Foundations of Decision Making
-- [CS 49000: Data Science Capstone](https://www.cs.purdue.edu/homes/jhonorio/22spring-cs49000dsc.html))
+- [CS 49000: Data Science Capstone](https://www.cs.purdue.edu/homes/jhonorio/22spring-cs49000dsc.html)
 - CS 24200 / STAT 24200: Introduction to Data Science
 
 ## [Lahore University of Management & Sciences (LUMS)](https://www.lums.edu.pk/)
