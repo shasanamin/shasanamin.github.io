@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attending NeurIPS-2023 and presenting work on Support Vector Effect in DNNs.
+Attending NeurIPS to present work on Support Vector Effect in DNNs.
