@@ -121,7 +121,8 @@ blockquote {
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    //font-family: monospace;
+    font-family: 'Crimson Pro', serif;
 
     p {
       display: inline-block;
@@ -334,6 +335,7 @@ blockquote {
   .title {
     font-size: 2.5rem;
     // font-family: monospace;  //monospace, Arial, sans-serif, cursive
+    font-family: 'Crimson Pro', serif;
     font-weight: bold;
   }
 
