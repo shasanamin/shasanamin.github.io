@@ -48,8 +48,8 @@ layout: default
             <div class="address">
               {{ page.profile.address }}
             </div>
-
             {%- endif %}
+
           </div>
           {%- endif %}
 
@@ -57,87 +57,80 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;"><span class="font-weight-bold">News</span></a></h2>
+            <!-- News -->
+            {% if page.news and site.announcements.enabled -%}
+            <h2><span class="font-weight-bold"><i class="fas fa-newspaper" style="font-size: 34px;"></i> News</span></h2>
             {%- include news.html limit=true %}
-          {%- endif %}
+            <div style="text-align: left; margin-top: -20px; margin-bottom: 30px;">
+              <a href="{{ '/news/' | relative_url }}" class="news-header">See more...</a>
+            </div>
+            <hr class="section-divider">
+            {%- endif %}
 
           <!-- Latest posts -->
           {% if page.latest_posts -%}
             <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;"><span class="font-weight-bold">Latest Posts</span></a></h2>
             {%- include latest_posts.html %}
+            <hr class="section-divider">
           {%- endif %}
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a style="color: inherit;"><span class="font-weight-bold">Publications</span></a></h2>
-            <!-- <div class="paper" style="width:100%; display: inline-block;">
+            <h2><span class="font-weight-bold"><i class="fas fa-book" style="font-size: 34px;"></i> Selected Publications</span></h2>
+            
+            <div class="paper" style="width:100%; display: flex; align-items: center; margin-bottom: -10px;">
               <a class="anchor" id="sample-paper"></a>
-                  <div style="float:left; width:20%; display: inline-block; vertical-align:middle;">
-                    <img class="paper-img" src="/assets/img/rob_favicon.png" width="115" alt="" />
-                  </div>
-                  <div style="float:left; display: table-cell; width: 75%; margin-left:5px; vertical-align:middle; height:100%;">
-                    <h4 style="font-weight:500;"><a href="/assets/pdf/example_pdf.pdf">On the Support Vector Effect in DNNs: Rethinking Last Layer Sensitivity-based Instance Attribution</a></h4>
-                      <p><b>Hasan Amin</b>, and Rajiv Khanna.<br> 
-                        Attributing Model Behavior at Scale Workshop at NeurIPS, New Orleans, December 2023. 
-                        <br>
-                        <a href="/assets/pdf/sve_poster.pdf" title="Poster"><i class="fas fa-book"></i></a>
-                        <br>
-                      </p>
-                  </div>
-            </div> -->
-
-            <div class="paper" style="width:100%; display: inline-block;">
-              <a class="anchor" id="sample-paper"></a>
-                  <div style="float:left; display: table-cell; width: 100%; margin-left:5px; vertical-align:middle; height:100%;">
-                    <h4 style="font-weight:500;">
-                      <a href="/assets/pdf/example_pdf.pdf">On the Support Vector Effect in DNNs: Rethinking Last Layer Sensitivity-based Instance Attribution</a>
-                      <a href="/assets/pdf/sve_poster.pdf" title="Poster" style="margin-left: 10px;"><i class="fas fa-book"></i></a>
-                    </h4>
-                      <p>
-                        <span style="font-weight: bold;">Hasan Amin</span> and Rajiv Khanna<br> 
-                        <span style="font-style: italic;">Attributing Model Behavior at Scale Workshop at NeurIPS, New Orleans, December 2023.</span>
-                      </p>
-                  </div>
+                <div style="flex: 0 0 15%; display: flex; align-items: center; justify-content: center; padding-right: 1rem;">
+                <style>.paper-img {max-width: 120px; width: 100%; height: auto; border-radius: 15%;}</style>
+                <img class="paper-img" src="/assets/img/sve.png" alt="" />
+                </div>
+              <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+              <h4 style="font-weight:500;">
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3690624.3709295" style="font-size: 26px;">On the Support Vector Effect in DNNs: Rethinking Data Selection and Attribution</a>
+              </h4>
+                <p style="margin-top: -6px;">
+                <span style="font-weight: bold;">Hasan Amin</span>, Ming Yin and Rajiv Khanna<br> 
+                <span style="font-style: italic;">The 31st SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</span><br>Toronto, Canada, August 2025
+                </p>
+              </div>
             </div>
 
-            <div class="paper" style="width:100%; display: inline-block;">
+            <div class="paper" style="width:100%; display: flex; align-items: center; margin-bottom: -10px;">
               <a class="anchor" id="sample-paper"></a>
-                  <!-- <div style="float:left; width:20%; display: inline-block; vertical-align:middle;">
-                    <img class="paper-img" src="/assets/img/rob_favicon.png" width="100" alt="" />
-                  </div> -->
-                  <div style="float:left; display: table-cell; width: 100%; margin-left:5px; vertical-align:middle; height:100%;">
-                    <h4 style="font-weight:500;">
-                      <a href="/assets/pdf/gwhr_cameraready.pdf">Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams</a>
-                      <a href="/assets/pdf/gwhr_poster.pdf" title="Poster" style="margin-left: 10px;"><i class="fas fa-book"></i></a>
-                    </h4>
-                      <p>
-                        <span style="font-weight: bold;">Hasan Amin</span>, Zhuoran Lu, and Ming Yin<br> 
-                        <span style="font-style: italic;">Artificial Intelligence & Human Computer Interaction Workshop at ICML, Hawaii, July 2023.</span>
-                      </p>
-                  </div>
+                <div style="flex: 0 0 15%; display: flex; align-items: center; justify-content: center; padding-right: 1rem;">
+                <style>.paper-img {max-width: 120px; width: 100%; height: auto; border-radius: 15%;}</style>
+                <img class="paper-img" src="/assets/img/mm.png" alt="" />
+                </div>
+              <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+              <h4 style="font-weight:500;">
+                <a href="https://ojs.aaai.org/index.php/HCOMP/article/view/31604/33770" style="font-size: 26px;"> Mix and Match: Characterizing Heterogeneous Human Behavior in AI-assisted Decision Making</a>
+              </h4>
+                <p style="margin-top: -6px;">
+                Zhuoran Lu, <span style="font-weight: bold;">Hasan Amin</span>, Zhuoyan Li and Ming Yin<br> 
+                <span style="font-style: italic;">The 12th AAAI Conference on Human Computation and Crowdsourcing (HCOMP)</span><br>Pittsburgh, USA, October 2024
+                </p>
+              </div>
             </div>
 
-            <div class="paper" style="width:100%; display: inline-block;">
+            <div class="paper" style="width:100%; display: flex; align-items: center; margin-bottom: -10px;">
               <a class="anchor" id="sample-paper"></a>
-                  <div style="float:left; display: table-cell; width: 100%; margin-left:5px; vertical-align:middle; height:100%;">
-                    <h4 style="font-weight:500;"><a href="https://ahmedabbasi.com/wp-content/uploads/C/Mahmood_DeepGenerativeModels_ICDMW2020.pdf">Using Deep Generative Models to Boost Forecasting</a></h4>
-                      <p>
-                        <span style="font-weight: bold;">Hasan Amin</span> and Ahmed Abbasi<br> 
-                        <span style="font-style: italic;">IEEE International Conference on Data Mining (ICDM) Workshops, Sorrento, Italy, November 2020.</span>
-                      </p>
-                  </div>
+                <div style="flex: 0 0 15%; display: flex; align-items: center; justify-content: center; padding-right: 1rem;">
+                <style>.paper-img {max-width: 120px; width: 100%; height: auto; border-radius: 15%;}</style>
+                <img class="paper-img" src="/assets/img/behaviorAware.png" alt="" />
+                </div>
+              <div style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+              <h4 style="font-weight:500;">
+                <a href="https://www.ijcai.org/proceedings/2024/0344.pdf" style="font-size: 26px;"> Designing Behavior-Aware AI to Improve Human-AI Team Performance in AI-Assisted Decision Making</a>
+              </h4>
+                <p style="margin-top: -6px;">
+                <span style="font-weight: bold;">Hasan Amin</span>, Zhuoran Lu and Ming Yin<br> 
+                <span style="font-style: italic;">The 33rd International Joint Conference on Artificial Intelligence (IJCAI)</span><br>Jeju, South Korea, August 2024
+                </p>
+              </div>
             </div>
-            <div class="paper" style="width:100%; display: inline-block;">
-              <a class="anchor" id="sample-paper"></a>
-                  <div style="float:left; display: table-cell; width: 100%; margin-left:5px; vertical-align:middle; height:100%;">
-                    <h4 style="font-weight:500;"><a href="https://ahmedabbasi.com/wp-content/uploads/C/Mahmood_Phishcasting_IEEEISI2020.pdf">Phishcasting: Deep Learning for Time Series Forecasting of Phishing Attacks</a></h4>
-                      <p>
-                        <span style="font-weight: bold;">Hasan Amin</span>, Mustafa Abbasi, and Ahmed Abbasi.<br> 
-                        <span style="font-style: italic;">IEEE International Conference on Intelligence & Security Informatics, Virtual, November 2020.</span>
-                      </p>
-                  </div>
+            
+            <div style="text-align: left; margin-top: 0px; margin-bottom: 0px;">
+              <a href="{{ '/publications/' | relative_url }}" class="publications-header">See more...</a>
             </div>
           {%- endif %}
 

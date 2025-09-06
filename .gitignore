@@ -8,3 +8,5 @@ _site
 .tweet-cache
 Gemfile.lock
 vendor
+# _layouts/main_local.html
+*_local*

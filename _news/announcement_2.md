@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2020-10-08 00:00:00-0000
+date: 2024-05-10 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-Work done as undergraduate thesis now accepted as a full paper at IEEE ISI 2020. Excited to attend my first conference.
+Earned an M.S. in Computer Science along the way to my Ph.D.

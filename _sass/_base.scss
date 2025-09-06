@@ -21,7 +21,7 @@ strong {
 }
 html{
   // font-size: 16px;
-  font-size: 19px;
+  font-size: 21px;
 }
 
 hr {
@@ -139,7 +139,7 @@ blockquote {
 }
 
 .profile.float-left {
-  margin-right: 1rem;
+  margin-right: 2.5rem;
 }
 
 @media (min-width: 576px) {
@@ -336,19 +336,23 @@ blockquote {
   margin-bottom: 1em;
   
   .title {
-    font-size: 2.5rem;
-    // font-family: monospace;  //'Crimson Pro', serif, monospace, Arial, sans-serif, cursive
+    font-size: 40px;
+    // font-size: 2.5rem;
+    // font-family: 'Crimson Pro';  //'Crimson Pro', serif, monospace, Arial, sans-serif, cursive
     font-weight: bold;
-    // word-spacing: normal;
+    -webkit-text-stroke: 1px;
+
+    word-spacing: normal;
   }
 
   .contact-icons {
     font-size: 2.5rem;
+    // font-size: 2.5rem;
 
     a {
       i::before {
         color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        transition-property: all 0.1s ease-in-out;
       }
 
       &:hover {
@@ -360,8 +364,8 @@ blockquote {
   }
 
   .note {
-    font-size: 1rem;
-    font-family: monospace;
+    font-size: 2.5rem;
+    font-family: 'Crimson Pro';
   }
 }
 
@@ -1102,4 +1106,117 @@ nav[data-toggle="toc"] {
     margin-bottom: 0;
     padding-top: 0.5rem;
   }
+}
+
+
+// NOT FINALIZED
+// Profile image
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  figure {
+    width: 100%;  // Takes up 75% of profile container width
+    max-width: 220px; // Maximum width constraint
+    margin: 0 auto; // Center horizontally
+    
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+// Floating profile
+.profile {
+  position: fixed;
+  top: 0;
+  
+  top: 135px;
+  // left: calc((30% - 30vw) / 2); // Centers profile between left edge and content
+  // left: calc((30% - 28vw) / 2);
+  left: calc(10px + ((30% - 30vw) / 2));
+  // width: 30vw;
+
+  padding: 0 max(5vw, 20px);
+  // margin: 0;
+}
+
+// Main content area except profile
+.post > *:not(.profile) {
+  margin-left: 30%;
+  width: 70%;
+}
+
+// Responsive adjustments
+@media (max-width: 900px) {
+  .profile {
+    position: relative;
+    top: 0;
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+  
+  .post > *:not(.profile) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+// Container width control
+.container {
+  max-width: 1400px !important; // Increase from default (usually 1200px)
+  width: 95% !important;        // Use more screen width
+  padding: 0 2vw;
+}
+
+// For extra large screens
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1600px !important;
+    width: 90% !important;
+    padding: 0 2vw;
+  }
+}
+
+
+// Reduce spacing between news items
+.news {
+  table {
+    tr {
+      width: 100%;
+      margin-left: 0px;
+
+      th {
+        margin: 0;
+        font-size: inherit;
+        font-weight: bold;
+        white-space: nowrap;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 0%;
+        padding-bottom: 0.3rem;
+        // line-height: 1.2;
+      }
+    
+      td {
+        margin: 0;
+        font-size: inherit;
+        // white-space: nowrap; // Prevents text from wrapping to the next line
+        // overflow: hidden; // Ensures overflow text is hidden
+        text-overflow: ellipsis; // Adds ellipsis (...) for overflow text
+        padding-left: 1rem;
+        padding-right: 0%;
+        padding-top: 0%;
+        padding-bottom: 0.5rem;
+        // line-height: 1.2;
+      }
+    }
+  }
+}
+
+body {
+  line-height: 1.3;
 }
