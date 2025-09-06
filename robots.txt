@@ -1,4 +1,1 @@
-User-agent: *
-Disallow:
-
 Sitemap: https://shasanamin.github.io/sitemap.xml
