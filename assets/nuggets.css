@@ -1,0 +1,18 @@
+/* A quiet object lower in the margin. Click it; the words stay beside it. */
+.nugget-pocket { width: 254px; max-width: 100%; margin-top: clamp(4.5rem, 14vh, 8rem); }
+.nugget-trigger { display: block; width: 100px; margin-inline: auto; padding: 5px; border-radius: 6px; cursor: pointer; list-style: none; }
+.nugget-trigger::-webkit-details-marker { display: none; }
+.nugget-trigger img { display: block; width: 100%; transition: transform .18s ease; }
+.nugget-trigger:hover img { transform: rotate(-3deg) translateY(-2px); }
+.nugget-trigger:focus-visible { outline-color: var(--link); }
+.nugget-reveal { margin-top: .7rem; text-align: center; }
+.nugget-quote { margin: 0; padding: 0; border: 0; color: var(--secondary); font-size: .95rem; line-height: 1.5; white-space: pre-line; text-wrap: pretty; }
+.nugget-quote:lang(ur) { font-family: 'Noto Nastaliq Urdu', 'Geeza Pro', serif; font-size: .92rem; line-height: 2.2; padding: .25rem .2rem .6rem; }
+@media (max-width: 900px) {
+  .nugget-pocket { margin-top: 1.6rem; }
+  .nugget-trigger { width: 84px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nugget-trigger img { transition: none; }
+  .nugget-trigger:hover img { transform: none; }
+}
