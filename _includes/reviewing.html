@@ -1,0 +1,14 @@
+{% for group in site.data.service.reviewing %}
+<section class="service-review-group">
+  <h3>{{ group.category | escape }}</h3>
+  <ul class="reviewing-list">
+    {% for venue in group.venues %}
+    <li>
+      <div class="reviewing-venue"><a href="{{ venue.url | site_url }}">{{ venue.name | escape }}</a> <span class="service-years">{{ venue.years | join: ', ' }}</span></div>
+      {% unless venue.name == venue.full_name %}<span class="reviewing-name">{{ venue.full_name | escape }}</span>{% endunless %}
+      {% if venue.recognition_years %}<span class="review-recognition">Outstanding reviewing recognition · {{ venue.recognition_years | join: ', ' }}</span>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

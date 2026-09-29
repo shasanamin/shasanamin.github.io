@@ -1,0 +1,17 @@
+<aside class="profile" aria-label="Profile and contact links">
+  <img class="profile-image" src="{{ site.profile.image | site_url }}" alt="{{ site.profile.alt | escape }}" width="{{ site.profile.image_width }}" height="{{ site.profile.image_height }}" fetchpriority="high">
+  <h1 class="profile-name">{{ site.name }}</h1>
+  {% if site.alternate_name %}
+  <details class="profile-alias">
+    <summary>also known as…</summary>
+    <p>{{ site.alternate_name | escape }}<span>yes, that’s me too.</span></p>
+  </details>
+  {% endif %}
+  <div class="contact-icons">
+    {% for link in site.social %}
+    <a href="{{ link.url | site_url }}" aria-label="{{ link.name | escape }}" title="{{ link.name | escape }}">{% include icon.html name=link.icon %}</a>
+    {% endfor %}
+  </div>
+  {% if site.profile.note %}<p class="profile-note">{{ site.profile.note }}</p>{% endif %}
+  {% include nuggets.html %}
+</aside>

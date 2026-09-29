@@ -1,0 +1,14 @@
+{% assign first_nugget = site.data.nuggets | first %}
+{% if first_nugget %}
+<div class="nugget-pocket" data-nuggets>
+  <details class="nugget-discovery">
+    <summary class="nugget-trigger" aria-label="Discover a gold nugget">
+      <img src="{{ '/files/gold-nuggets.webp' | site_url }}" width="510" height="340" alt="" loading="lazy" decoding="async">
+    </summary>
+    <div class="nugget-reveal" aria-live="polite" aria-atomic="true">
+      <blockquote class="nugget-quote" lang="{{ first_nugget.lang | escape }}" dir="{{ first_nugget.dir | default: 'auto' | escape }}">{{ first_nugget.text | escape | newline_to_br }}</blockquote>
+    </div>
+  </details>
+  <script id="nugget-data" type="application/json">{{ site.data.nuggets | jsonify | replace: '<', '\u003c' }}</script>
+</div>
+{% endif %}

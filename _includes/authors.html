@@ -1,0 +1,13 @@
+{%- for author in include.authors -%}
+  {%- unless forloop.first -%}
+    {%- if forloop.last -%}
+      {%- if forloop.length > 2 -%}{{- ',' -}}{%- endif -%}
+      {{- ' and ' -}}
+    {%- else -%}
+      {{- ', ' -}}
+    {%- endif -%}
+  {%- endunless -%}
+  {%- if site.author_names contains author -%}
+    <span class="author-self">{{ author | escape }}</span>
+  {%- else -%}{{ author | escape }}{%- endif -%}
+{%- endfor -%}

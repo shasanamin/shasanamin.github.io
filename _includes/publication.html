@@ -1,0 +1,38 @@
+<article class="paper" id="{{ include.publication.id | escape }}">
+  {% assign publication = include.publication %}
+  {% if publication.figure %}
+  <div class="paper-image">
+    <svg class="paper-figure" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 190" width="180" height="190" role="img" aria-label="{{ publication.figure_alt | escape }}" focusable="false" data-figure="{{ publication.figure | escape }}">
+      {% assign figure_path = 'figures/' | append: publication.figure | append: '.svg' %}
+      {% include {{ figure_path }} %}
+    </svg>
+  </div>
+  {% elsif publication.image %}
+  <div class="paper-image"><img class="paper-img" src="{{ publication.image | site_url }}" alt="{{ publication.image_alt | escape }}" width="{{ publication.image_width }}" height="{{ publication.image_height }}" loading="lazy" decoding="async"></div>
+  {% endif %}
+  <div class="paper-details">
+    <h3><a href="{{ publication.url | site_url }}" target="_blank" rel="noopener">{{ publication.title | escape }}</a></h3>
+    <p class="paper-authors">{% include authors.html authors=publication.authors %}.</p>
+    <p class="paper-citation"><em>{{ publication.venue | escape }}</em>{% if publication.venue_acronym %} <strong class="paper-venue">({{ publication.venue_acronym | escape }})</strong>{% endif %}</p>
+    <p class="paper-context">{% if publication.location %}{{ publication.location | escape }} · {% endif %}{{ publication.date | escape }}</p>
+    {% if publication.pdf_url or publication.code_url or publication.bibtex or publication.award %}
+    <div class="paper-links">
+      {% if publication.pdf_url %}<a href="{{ publication.pdf_url | site_url }}" target="_blank" rel="noopener" aria-label="PDF — {{ publication.title | escape }}">PDF <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.code_url %}<a href="{{ publication.code_url | site_url }}" target="_blank" rel="noopener" aria-label="Code — {{ publication.title | escape }}">Code <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.bibtex %}
+      <details class="paper-bibtex">
+        <summary aria-label="BibTeX citation for {{ publication.title | escape }}">BibTeX <span class="bibtex-indicator" aria-hidden="true">+</span></summary>
+        <div class="bibtex-panel">
+          <div class="bibtex-toolbar">
+            <span class="bibtex-status" role="status" aria-live="polite"></span>
+            <button type="button" class="bibtex-copy" aria-label="Copy BibTeX for {{ publication.title | escape }}" hidden>Copy</button>
+          </div>
+          <textarea class="bibtex-text" readonly spellcheck="false" rows="10" wrap="soft" aria-label="BibTeX for {{ publication.title | escape }}">{{ publication.bibtex | strip | escape }}</textarea>
+        </div>
+      </details>
+      {% endif %}
+      {% if publication.award %}<span class="paper-award">{{ publication.award | escape }}</span>{% endif %}
+    </div>
+    {% endif %}
+  </div>
+</article>

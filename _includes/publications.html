@@ -1,0 +1,18 @@
+{% if include.selected %}
+  {% assign selected_publications = site.data.publications | where: 'selected', true %}
+  {% for publication in selected_publications limit: site.publication_limit %}
+    {% include publication.html publication=publication %}
+  {% endfor %}
+{% else %}
+  {% assign publication_groups = site.data.publications | group_by: 'group' %}
+  {% for group in publication_groups %}
+  <section class="publication-group" aria-labelledby="{{ group.name | slugify }}">
+    <h2 id="{{ group.name | slugify }}">{{ group.name | escape }}</h2>
+    <ol class="publication-list">
+      {% for publication in group.items %}
+      <li>{% include publication.html publication=publication %}</li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+{% endif %}

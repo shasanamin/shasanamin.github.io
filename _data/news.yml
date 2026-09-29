@@ -1,0 +1,99 @@
+# Add an entry with a date and Markdown text. Entries display newest first.
+
+# The summit announcement uses the event's closing date, September 2.
+- date: "2026-09-02"
+  text: |-
+    Selected as a [Future Leader of AI](https://aisummit26.acm.org/future-leaders/) and delighted to be attending the [ACM AI Leadership Summit](https://aisummit26.acm.org/) in Atlanta.
+
+# Graduation is known to the month; August 1 is a sorting anchor, not the conferral day.
+- date: "2026-08-01"
+  text: |-
+    PhD, done! Completed my doctorate in Computer Science at Purdue. Grateful to [Ming](https://mingyin.org/) and [Rajiv](https://rjvak7.github.io/), and to the friends and collaborators who made these years so meaningful.
+
+- date: "2026-05-13"
+  text: |-
+    Recognized as a [Gold Reviewer at ICML 2026](https://www.linkedin.com/posts/icmlconf_icml-2026-volunteer-and-financial-aid-activity-7460462555539517442-CkZ1).
+
+- date: "2026-04-30"
+  text: |-
+    [Consistent Diffusion Language Models](https://arxiv.org/abs/2605.00161) is headed to ICML! Work from my time with Microsoft Turing on generating text in fewer refinement steps.
+
+- date: "2026-04-07"
+  text: |-
+    [From Fallback to Frontline](https://aclanthology.org/2026.findings-acl.2124/) got accepted at ACL! We ask when LLMs can better estimate a group’s perspectives than individual human annotators.
+
+- date: "2026-03-08"
+  text: |-
+    Our [AI-assisted critical thinking paper](https://doi.org/10.1145/3772318.3790785) received a Best Paper Honorable Mention at CHI! Glad to share this one with Harry and Ming.
+
+- date: "2026-01-15"
+  text: |-
+    Our work on [AI-assisted critical thinking](https://doi.org/10.1145/3772318.3790785) is accepted to CHI! Helping people question their own reasoning can reduce over-reliance on AI, but asks more of them too.
+
+- date: "2025-12-01"
+  text: |-
+    Received Special Recognition for Outstanding Review at [CHI 2026](https://chi2026.acm.org/). Grateful for the thoughtful feedback I’ve received over the years, and glad to return some of it.
+
+- date: "2025-11-07"
+  text: |-
+    [Align When They Want, Complement When They Need!](https://ojs.aaai.org/index.php/AAAI/article/view/38786) has made it to AAAI. One model to earn trust, another to offer complementary strengths—and a policy for choosing between them.
+
+- date: "2025-08-18"
+  text: |-
+    Honored to serve as the CS Graduate Committee Representative this year, working on curriculum and policy issues across the department and the College of Science.
+
+- date: "2025-06-06"
+  text: |-
+    Selected to receive a College of Science Graduate Travel Award to support upcoming conference participation.
+
+- date: "2025-05-19"
+  text: |-
+    Excited to return to Redmond for another internship with the Turing team at Microsoft.
+
+- date: "2025-04-15"
+  text: |-
+    Recognized for outstanding reviewing in the [ACL ARR February cycle](https://stats.aclrollingreview.org/iterations/2025/february/).
+
+- date: "2025-03-28"
+  text: |-
+    Served as judge at Purdue's [Spring Undergraduate Research Conference](https://www.purdue.edu/undergrad-research/conferences/spring/index.php). Inspiring to witness such exciting ideas from undergraduates across disciplines.
+
+- date: "2025-03-12"
+  text: |-
+    Organized the inaugural [Graduate Research Symposium](https://www.cs.purdue.edu/gsa/symposium.html) at Purdue CS. Thank you everyone who made it a success!
+
+- date: "2025-02-02"
+  text: |-
+    Our work on the [Support Vector Effect in DNNs](https://dl.acm.org/doi/pdf/10.1145/3690624.3709295) got accepted in KDD! Long wait to present in August.
+
+- date: "2024-12-17"
+  text: |-
+    [Won the North America Student Challenge!](https://www.computer.org/publications/tech-news/insider-membership-news/north-america-student-challenge-2024-highlights)
+
+- date: "2024-11-20"
+  text: |-
+    Selected as a finalist for the [North America Student Challenge](https://www.computer.org/publications/tech-news/events/north-america-student-challenge-2024) (NASC), and invited to present at [BigData2024](https://www3.cs.stonybrook.edu/~ieeebigdata2024/) in Washington DC next month.
+
+- date: "2024-11-14"
+  text: |-
+    Represented Purdue CS at [The AI Imperative](https://www.purdue.edu/events/ai-summit/) conference hosted by Google and Purdue in Indianapolis. Many thanks to the organizers for the opportunity and sponsorship.
+
+- date: "2024-08-03"
+  text: |-
+    Attended IJCAI in Jeju, South Korea, to present work on [behavior-aware AI](https://www.ijcai.org/proceedings/2024/344).
+
+- date: "2024-07-15"
+  text: |-
+    Grateful for the opportunity to serve as Senator for 500+ CS graduate students in Purdue’s Graduate Student Government. Looking forward to supporting our community and hearing your ideas.
+
+- date: "2024-05-19"
+  text: |-
+    Started internship with Microsoft’s [Turing Team](https://turing.microsoft.com/about) in Redmond, focusing on improving LLM post-training.
+
+- date: "2024-05-10"
+  text: |-
+    Earned an M.S. in Computer Science along the way to my Ph.D.
+
+- date: "2023-12-10"
+  text: |-
+    Attended NeurIPS to present my work on the Support Vector Effect in DNNs.

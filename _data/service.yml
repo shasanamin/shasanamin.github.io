@@ -1,0 +1,118 @@
+# Roles and dates follow files/cv.pdf. One shared record for the homepage and /service/.
+roles:
+- role: Graduate Committee Representative
+  organization: Purdue Computer Science
+  url: https://www.cs.purdue.edu/gsa/officers.html
+  years: 2025–2026
+  detail: Representing graduate students in departmental discussions.
+- role: Organizer
+  organization: Purdue CS Graduate Research Symposium
+  url: https://www.cs.purdue.edu/gsa/symposium.html
+  years: '2025'
+  detail: Organized the department's inaugural graduate research symposium.
+- role: Officer
+  organization: Purdue CS Graduate Student Board
+  url: https://www.cs.purdue.edu/gsa/
+  years: 2024–2026
+- role: Mentor
+  organization: Purdue CS Mentor–Mentee Program
+  url: https://www.cs.purdue.edu/gsa/mentoring.html
+  years: 2024–2026
+  detail: Helping new graduate students find their footing in the department.
+- role: Mentor
+  organization: Code to PhD
+  url: https://codetophd.github.io/
+  years: '2025'
+  detail: Supporting prospective CS PhD applicants from underrepresented backgrounds.
+- role: Senator
+  organization: Purdue Graduate Student Government
+  url: https://purduegradstudents.com/about-us/
+  years: 2024–2025
+- role: Member
+  organization: PGSG Grant Review & Allocation Committee
+  url: https://grac.purduegradstudents.com/
+  years: 2024–2025
+- role: Judge
+  organization: Purdue Spring Undergraduate Research Conference
+  url: https://www.purdue.edu/undergrad-research/conferences/spring/index.php
+  years: 2025–2026
+  detail: Providing feedback on undergraduate research presentations.
+
+# Venue links are official organization, conference, or journal pages.
+# recognition_years records recognition for outstanding reviewing, as in the CV.
+reviewing:
+  - category: Conferences
+    venues:
+      - name: ICLR
+        full_name: International Conference on Learning Representations
+        url: https://iclr.cc/
+        years: [2026, 2027]
+      - name: NeurIPS
+        full_name: Conference on Neural Information Processing Systems
+        url: https://neurips.cc/
+        years: [2024, 2025, 2026]
+      - name: ICML
+        full_name: International Conference on Machine Learning
+        url: https://icml.cc/
+        years: [2025, 2026]
+        recognition_years: [2026]
+      - name: AAAI
+        full_name: AAAI Conference on Artificial Intelligence
+        url: https://aaai.org/conference/aaai/
+        years: [2026, 2027]
+      - name: AISTATS
+        full_name: International Conference on Artificial Intelligence and Statistics
+        url: https://aistats.org/
+        years: [2025, 2026]
+      - name: CHI
+        full_name: ACM Conference on Human Factors in Computing Systems
+        url: https://chi2026.acm.org/
+        years: [2025, 2026]
+        recognition_years: [2026]
+      - name: ACL
+        full_name: Annual Meeting of the Association for Computational Linguistics
+        url: https://2025.aclweb.org/
+        years: [2025]
+        recognition_years: [2025]
+      - name: CI
+        full_name: ACM Conference on Collective Intelligence
+        url: https://ci.acm.org/
+        years: [2025]
+      - name: KDD
+        full_name: ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+        url: https://kdd.org/
+        years: [2024]
+      - name: IJCAI
+        full_name: International Joint Conference on Artificial Intelligence
+        url: https://www.ijcai.org/
+        years: [2024]
+
+  - category: Journals
+    venues:
+      - name: TMLR
+        full_name: Transactions on Machine Learning Research
+        url: https://jmlr.org/tmlr/
+        years: [2026]
+      - name: IJHCI
+        full_name: International Journal of Human–Computer Interaction
+        url: https://www.tandfonline.com/journals/hihc20
+        years: [2026]
+      - name: IEEE Intelligent Systems
+        full_name: IEEE Intelligent Systems
+        url: https://www.computer.org/csdl/magazine/ex
+        years: [2020, 2021, 2022]
+
+  - category: Workshops & other tracks
+    venues:
+      - name: GenAI for Health
+        full_name: Workshop on GenAI for Health at NeurIPS
+        url: https://neurips.cc/virtual/2025/workshop/109566
+        years: [2024, 2025, 2026]
+      - name: CHI Late-Breaking Work
+        full_name: ACM CHI Late-Breaking Work
+        url: https://chi2025.acm.org/for-authors/late-breaking-work/
+        years: [2025]
+      - name: IMLH
+        full_name: Workshop on Interpretable Machine Learning in Healthcare at ICML
+        url: https://icml.cc/virtual/2023/workshop/21486
+        years: [2022, 2023]

@@ -1,0 +1,457 @@
+# List papers newest first. The full page groups them by publication type.
+# selected: true makes a paper eligible for the homepage (up to publication_limit).
+# url is the publisher/paper record; pdf_url is a local PDF; code_url is optional.
+
+- id: simple-diffusion
+  group: Preprints
+  title: "Simple Diffusion Language Models Are More Effective Few-Step Generators Than Reported"
+  authors:
+    - Hasan Amin
+    - Ming Yin
+    - Rajiv Khanna
+  venue: "arXiv preprint arXiv:2609.33947"
+  date: September 2026
+  url: https://arxiv.org/abs/2609.33947
+  pdf_url: /files/arxiv26-simple-diffusion.pdf
+  code_url: https://github.com/shasanamin/more-effective-dlms
+  image: /files/arxiv26-simple-diffusion.webp
+  image_alt: An unchanged model feeds a gold sampler dial, which leads to several distinct text outputs.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://arxiv.org/abs/2609.33947
+  bibtex: |
+    @misc{amin2026simplediffusion,
+      title = {{Simple Diffusion Language Models Are More Effective Few-Step Generators Than Reported}},
+      author = {Amin, Hasan and Yin, Ming and Khanna, Rajiv},
+      eprint = {2609.33947},
+      archivePrefix = {arXiv},
+      primaryClass = {cs.CL},
+      doi = {10.48550/arXiv.2609.33947},
+      year = {2026},
+      url = {https://arxiv.org/abs/2609.33947}
+    }
+
+- id: scale-invariant-instability
+  group: Preprints
+  title: "When Does Scale-Invariant Optimization Become Unstable? An Exact Schedule Law with Weight Decay"
+  authors:
+    - Hasan Amin
+    - Wei-Kai Chang
+    - Rajiv Khanna
+  venue: "arXiv preprint arXiv:2609.09116"
+  date: September 2026
+  url: https://arxiv.org/abs/2609.09116
+  pdf_url: /files/arxiv26-scale-invariant-instability.pdf
+  code_url: https://github.com/shasanamin/normalized-optimization-dynamics
+  image: /files/arxiv26-scale-invariant-instability.webp
+  image_alt: Two weight norms share a direction; inward shrinkage is paired with a larger angular step at the smaller radius, above a schedule control.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://arxiv.org/abs/2609.09116
+  bibtex: |
+    @misc{amin2026scaleinvariant,
+      title = {{When Does Scale-Invariant Optimization Become Unstable? An Exact Schedule Law with Weight Decay}},
+      author = {Amin, Hasan and Chang, Wei-Kai and Khanna, Rajiv},
+      eprint = {2609.09116},
+      archivePrefix = {arXiv},
+      primaryClass = {cs.LG},
+      doi = {10.48550/arXiv.2609.09116},
+      year = {2026},
+      url = {https://arxiv.org/abs/2609.09116}
+    }
+
+- id: consistent-diffusion
+  group: Refereed Conference and Journal Publications
+  title: Consistent Diffusion Language Models
+  authors:
+    - Hasan Amin
+    - Yuan Gao
+    - Yaser Souri
+    - Subhojit Som
+    - Ming Yin
+    - Rajiv Khanna
+    - Xia Song
+  venue: Proceedings of the 43rd International Conference on Machine Learning
+  venue_acronym: ICML
+  location: Seoul, South Korea
+  date: July 2026
+  url: https://icml.cc/virtual/2026/poster/66178
+  pdf_url: /files/icml26-consistent-diffusion.pdf
+  image: /files/icml26-consistent-diffusion.webp
+  image_alt: Masked writing becomes readable through successive refinements, with a gold shortcut skipping an intermediate step.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://icml.cc/virtual/2026/poster/66178
+  bibtex: |
+    @inproceedings{amin2026consistent,
+      title = {{Consistent Diffusion Language Models}},
+      author = {Amin, Hasan and Gao, Yuan and Souri, Yaser and Som, Subhojit and Yin, Ming and Khanna, Rajiv and Song, Xia},
+      booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+      year = {2026},
+      url = {https://icml.cc/virtual/2026/poster/66178}
+    }
+
+- id: fallback-to-frontline
+  group: Refereed Conference and Journal Publications
+  title: "From Fallback to Frontline: When Can LLMs be Superior Annotators of Human Perspectives?"
+  authors:
+    - Hasan Amin
+    - Harry Yizhou Tian
+    - Xiaoni Duan
+    - Chien-Ju Ho
+    - Rajiv Khanna
+    - Ming Yin
+  venue: Findings of the Association for Computational Linguistics
+  venue_acronym: ACL Findings
+  location: San Diego, USA
+  date: July 2026
+  url: https://aclanthology.org/2026.findings-acl.2124/
+  pdf_url: /files/acl26-fallback-to-frontline.pdf
+  code_url: https://github.com/shasanamin/llm-perspective-taking
+  image: /files/acl26-fallback-to-frontline.webp
+  image_alt: A human and an AI separately consider a group's expressed opinions.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://aclanthology.org/2026.findings-acl.2124.bib
+  bibtex: |
+    @inproceedings{amin-etal-2026-fallback,
+        title = "From Fallback to Frontline: When Can {LLM}s be Superior Annotators of Human Perspectives?",
+        author = "Amin, Hasan  and
+          Tian, Harry Yizhou  and
+          Duan, Xiaoni  and
+          Ho, Chien-Ju  and
+          Khanna, Rajiv  and
+          Yin, Ming",
+        editor = "Liakata, Maria  and
+          Moreira, Viviane P.  and
+          Zhang, Jiajun  and
+          Jurgens, David",
+        booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+        month = jul,
+        year = "2026",
+        address = "San Diego, California, United States",
+        publisher = "Association for Computational Linguistics",
+        url = "https://aclanthology.org/2026.findings-acl.2124/",
+        doi = "10.18653/v1/2026.findings-acl.2124",
+        pages = "42798--42830",
+        ISBN = "979-8-89176-395-1"
+    }
+
+- id: escaping-mode-lottery
+  group: Preprints
+  title: "Escaping the Mode Lottery: Multi-Response Training Improves Language Model Generalization"
+  authors:
+    - Hasan Amin
+    - Kian Ahrabian
+    - Ming Yin
+    - Rajiv Khanna
+  venue: "arXiv preprint arXiv:2606.00544"
+  date: May 2026
+  url: https://arxiv.org/abs/2606.00544
+  pdf_url: /files/arxiv26-escaping-mode-lottery.pdf
+  code_url: https://github.com/shasanamin/multi-response-training
+  image: /files/arxiv26-escaping-mode-lottery.webp
+  image_alt: One prompt is paired with a fan of distinct response bubbles, retaining several valid answers.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://arxiv.org/abs/2606.00544
+  bibtex: |
+    @misc{amin2026escaping,
+      title = {{Escaping the Mode Lottery: Multi-Response Training Improves Language Model Generalization}},
+      author = {Amin, Hasan and Ahrabian, Kian and Yin, Ming and Khanna, Rajiv},
+      eprint = {2606.00544},
+      archivePrefix = {arXiv},
+      primaryClass = {cs.LG},
+      doi = {10.48550/arXiv.2606.00544},
+      year = {2026},
+      url = {https://arxiv.org/abs/2606.00544}
+    }
+
+- id: critical-thinking
+  group: Refereed Conference and Journal Publications
+  title: Understanding the Effects of AI-Assisted Critical Thinking on Human-AI Decision Making
+  authors:
+    - Harry Yizhou Tian
+    - Hasan Amin
+    - Ming Yin
+  venue: Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems
+  venue_acronym: CHI
+  location: Barcelona, Spain
+  date: April 2026
+  url: https://doi.org/10.1145/3772318.3790785
+  pdf_url: /files/chi26-critical-thinking.pdf
+  award: Best Paper Honorable Mention
+  image: /files/chi26-critical-thinking.webp
+  image_alt: A person holds their own decision argument and revises a tentative reasoning link with a pencil, while an AI-assisted lens helps examine that link.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://api.crossref.org/works/10.1145/3772318.3790785
+  bibtex: |
+    @inproceedings{tian2026critical,
+      title = {{Understanding the Effects of AI-Assisted Critical Thinking on Human-AI Decision Making}},
+      author = {Tian, Harry Yizhou and Amin, Hasan and Yin, Ming},
+      booktitle = {Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems},
+      pages = {1--30},
+      publisher = {ACM},
+      doi = {10.1145/3772318.3790785},
+      year = {2026},
+      url = {https://doi.org/10.1145/3772318.3790785}
+    }
+
+- id: adaptive-ensembles
+  group: Refereed Conference and Journal Publications
+  title: "Align When They Want, Complement When They Need! Human-Centered Ensembles for Adaptive Human-AI Collaboration"
+  authors:
+    - Hasan Amin
+    - Ming Yin
+    - Rajiv Khanna
+  venue: Proceedings of the 40th AAAI Conference on Artificial Intelligence
+  venue_acronym: AAAI
+  location: Singapore
+  date: January 2026
+  url: https://ojs.aaai.org/index.php/AAAI/article/view/38786
+  pdf_url: /files/aaai26-adaptive-ensembles.pdf
+  code_url: https://github.com/shasanamin/aaai26-adaptive-ai
+  image: /files/aaai26-adaptive-ensembles.webp
+  image_alt: A human-conditioned switch chooses between overlapping and complementary regions of human and AI expertise.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://api.crossref.org/works/10.1609/aaai.v40i21.38786
+  bibtex: |
+    @article{amin2026align,
+      title = {{Align When They Want, Complement When They Need! Human-Centered Ensembles for Adaptive Human-AI Collaboration}},
+      author = {Amin, Hasan and Yin, Ming and Khanna, Rajiv},
+      journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+      volume = {40},
+      pages = {17337--17346},
+      publisher = {Association for the Advancement of Artificial Intelligence (AAAI)},
+      doi = {10.1609/aaai.v40i21.38786},
+      number = {21},
+      year = {2026},
+      url = {https://ojs.aaai.org/index.php/AAAI/article/view/38786}
+    }
+
+- id: support-vector-effect
+  group: Refereed Conference and Journal Publications
+  title: "On the Support Vector Effect in DNNs: Rethinking Data Selection and Attribution"
+  authors:
+    - Syed Hasan Amin Mahmood
+    - Ming Yin
+    - Rajiv Khanna
+  venue: Proceedings of the 31st ACM SIGKDD International Conference on Knowledge Discovery and Data Mining
+  venue_acronym: KDD
+  location: Toronto, Canada
+  date: August 2025
+  url: https://dl.acm.org/doi/abs/10.1145/3690624.3709295
+  pdf_url: /files/kdd25-support-vector-effect.pdf
+  code_url: https://github.com/shasanamin/sve
+  image: /files/kdd25-support-vector-effect.webp
+  image_alt: A magnifying glass over a neural network reveals a separating boundary and highlighted support examples nearest it.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://api.crossref.org/works/10.1145/3690624.3709295
+  bibtex: |
+    @inproceedings{mahmood2025support,
+      title = {{On the Support Vector Effect in DNNs: Rethinking Data Selection and Attribution}},
+      author = {Mahmood, Syed Hasan Amin and Yin, Ming and Khanna, Rajiv},
+      booktitle = {Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1},
+      pages = {1020--1031},
+      publisher = {ACM},
+      doi = {10.1145/3690624.3709295},
+      year = {2025},
+      url = {https://dl.acm.org/doi/abs/10.1145/3690624.3709295}
+    }
+
+- id: mix-and-match
+  group: Refereed Conference and Journal Publications
+  title: "Mix and Match: Characterizing Heterogeneous Human Behavior in AI-assisted Decision Making"
+  authors:
+    - Zhuoran Lu
+    - Syed Hasan Amin Mahmood
+    - Zhuoyan Li
+    - Ming Yin
+  venue: Proceedings of the 12th AAAI Conference on Human Computation and Crowdsourcing
+  venue_acronym: HCOMP
+  location: Pittsburgh, USA
+  date: October 2024
+  url: https://ojs.aaai.org/index.php/HCOMP/article/view/31604
+  pdf_url: /files/hcomp24-mix-and-match.pdf
+  image: /files/hcomp24-mix-and-match.webp
+  image_alt: People accept, set aside, or combine the same AI advice with their own judgment.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://api.crossref.org/works/10.1609/hcomp.v12i1.31604
+  bibtex: |
+    @article{lu2024mix,
+      title = {{Mix and Match: Characterizing Heterogeneous Human Behavior in AI-assisted Decision Making}},
+      author = {Lu, Zhuoran and Mahmood, Syed Hasan Amin and Li, Zhuoyan and Yin, Ming},
+      journal = {Proceedings of the AAAI Conference on Human Computation and Crowdsourcing},
+      volume = {12},
+      pages = {95--104},
+      publisher = {Association for the Advancement of Artificial Intelligence (AAAI)},
+      doi = {10.1609/hcomp.v12i1.31604},
+      number = {1},
+      year = {2024},
+      url = {https://ojs.aaai.org/index.php/HCOMP/article/view/31604}
+    }
+
+- id: behavior-aware-ai
+  group: Refereed Conference and Journal Publications
+  title: Designing Behavior-Aware AI to Improve the Human-AI Team Performance in AI-Assisted Decision Making
+  authors:
+    - Syed Hasan Amin Mahmood
+    - Zhuoran Lu
+    - Ming Yin
+  venue: Proceedings of the 33rd International Joint Conference on Artificial Intelligence
+  venue_acronym: IJCAI
+  location: Jeju, South Korea
+  date: August 2024
+  url: https://www.ijcai.org/proceedings/2024/344
+  pdf_url: /files/ijcai24-behavior-aware-ai.pdf
+  code_url: https://github.com/shasanamin/ijcai24-behavior-aware-ai
+  image: /files/ijcai24-behavior-aware-ai.webp
+  image_alt: An AI offers advice while anticipating how the person receiving it will choose.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://www.ijcai.org/proceedings/2024/bibtex/344
+  bibtex: |
+    @inproceedings{ijcai2024p344,
+      title     = {Designing Behavior-Aware AI to Improve the Human-AI Team Performance in AI-Assisted Decision Making},
+      author    = {Mahmood, Syed Hasan Amin and Lu, Zhuoran and Yin, Ming},
+      booktitle = {Proceedings of the Thirty-Third International Joint Conference on
+                   Artificial Intelligence, {IJCAI-24}},
+      publisher = {International Joint Conferences on Artificial Intelligence Organization},
+      editor    = {Kate Larson},
+      pages     = {3106--3114},
+      year      = {2024},
+      month     = {8},
+      note      = {Main Track},
+      doi       = {10.24963/ijcai.2024/344},
+      url       = {https://doi.org/10.24963/ijcai.2024/344},
+    }
+
+- id: support-vector-attribution
+  group: Workshop Papers, Posters, and Extended Abstracts
+  title: "On the Support Vector Effect in DNNs: Rethinking Last Layer Sensitivity-based Instance Attribution"
+  authors:
+    - Syed Hasan Amin Mahmood
+    - Rajiv Khanna
+  venue: Workshop on Attributing Model Behavior at Scale
+  venue_acronym: NeurIPS workshop
+  location: New Orleans, USA
+  date: December 2023
+  url: https://neurips.cc/virtual/2023/83395
+  image: /files/neurips23-workshop-support-vector-attribution.webp
+  image_alt: A model stamps the same attribution pattern onto two distinct examples of the same class.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://neurips.cc/virtual/2023/83395
+  bibtex: |
+    @inproceedings{mahmood2023support,
+      title = {{On the Support Vector Effect in DNNs: Rethinking Last Layer Sensitivity-based Instance Attribution}},
+      author = {Mahmood, Syed Hasan Amin and Khanna, Rajiv},
+      booktitle = {NeurIPS Workshop on Attributing Model Behavior at Scale},
+      year = {2023},
+      url = {https://neurips.cc/virtual/2023/83395}
+    }
+
+- id: human-reactions
+  group: Workshop Papers, Posters, and Extended Abstracts
+  title: "Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams"
+  authors:
+    - Hasan Amin
+    - Zhuoran Lu
+    - Ming Yin
+  venue: Workshop on Artificial Intelligence & Human Computer Interaction
+  venue_acronym: ICML workshop
+  location: Honolulu, USA
+  date: July 2023
+  url: https://icml.cc/virtual/2023/27379
+  pdf_url: /files/icml23-workshop-human-reactions.pdf
+  image: /files/icml23-workshop-human-reactions.webp
+  image_alt: A person with low self-confidence reaches for advice offered by an AI.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://icml.cc/virtual/2023/27379
+  bibtex: |
+    @inproceedings{amin2023give,
+      title = {{Give Weight to Human Reactions: Optimizing Complementary AI in Practical Human-AI Teams}},
+      author = {Amin, Hasan and Lu, Zhuoran and Yin, Ming},
+      booktitle = {ICML Workshop on Artificial Intelligence \& Human Computer Interaction},
+      year = {2023},
+      url = {https://icml.cc/virtual/2023/27379}
+    }
+
+- id: phishcasting
+  group: Refereed Conference and Journal Publications
+  title: "Phishcasting: Deep Learning for Time Series Forecasting of Phishing Attacks"
+  authors:
+    - Syed Hasan Amin Mahmood
+    - Syed Mustafa Ali Abbasi
+    - Ahmed Abbasi
+    - Fareed Zaffar
+  venue: Proceedings of the 2020 IEEE International Conference on Intelligence and Security Informatics
+  venue_acronym: ISI
+  location: Virtual Conference
+  date: November 2020
+  url: https://ieeexplore.ieee.org/abstract/document/9280509
+  pdf_url: /files/isi20-phishcasting.pdf
+  image: /files/isi20-phishcasting.webp
+  image_alt: Historical attack traces extend into a future phishing forecast on a calendar.
+  image_width: 480
+  image_height: 480
+  selected: true
+  bibtex_source: https://api.crossref.org/works/10.1109/ISI49825.2020.9280509
+  bibtex: |
+    @inproceedings{mahmood2020phishcasting,
+      title = {{Phishcasting: Deep Learning for Time Series Forecasting of Phishing Attacks}},
+      author = {Mahmood, Syed Hasan Amin and Abbasi, Syed Mustafa Ali and Abbasi, Ahmed and Zaffar, Fareed},
+      booktitle = {2020 IEEE International Conference on Intelligence and Security Informatics (ISI)},
+      pages = {1--6},
+      publisher = {IEEE},
+      doi = {10.1109/ISI49825.2020.9280509},
+      year = {2020},
+      url = {https://ieeexplore.ieee.org/abstract/document/9280509}
+    }
+
+- id: phishing-prediction
+  group: Workshop Papers, Posters, and Extended Abstracts
+  title: "Using Deep Generative Models to Boost Forecasting: A Phishing Prediction Case Study"
+  authors:
+    - Syed Hasan Amin Mahmood
+    - Ahmed Abbasi
+  venue: Proceedings of the 2020 IEEE International Conference on Data Mining Workshops
+  venue_acronym: ICDM Workshops
+  location: Sorrento, Italy
+  date: November 2020
+  url: https://ieeexplore.ieee.org/abstract/document/9346362
+  pdf_url: /files/icdmw20-phishing-prediction.pdf
+  image: /files/icdmw20-phishing-prediction.webp
+  image_alt: Several model forecast sheets combine into one future phishing prediction.
+  image_width: 480
+  image_height: 480
+  selected: false
+  bibtex_source: https://api.crossref.org/works/10.1109/icdmw51313.2020.00073
+  bibtex: |
+    @inproceedings{mahmood2020forecasting,
+      title = {{Using Deep Generative Models to Boost Forecasting: A Phishing Prediction Case Study}},
+      author = {Mahmood, Syed Hasan Amin and Abbasi, Ahmed},
+      booktitle = {2020 International Conference on Data Mining Workshops (ICDMW)},
+      pages = {496--505},
+      publisher = {IEEE},
+      doi = {10.1109/icdmw51313.2020.00073},
+      year = {2020},
+      url = {https://ieeexplore.ieee.org/abstract/document/9346362}
+    }

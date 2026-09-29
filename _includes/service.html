@@ -1,0 +1,8 @@
+<ul class="service-roles">
+  {% for item in site.data.service.roles %}
+  <li>
+    <div><strong>{{ item.role | escape }}</strong>, <a href="{{ item.url | site_url }}">{{ item.organization | escape }}</a> <span class="service-years">({{ item.years | escape }})</span>.</div>
+    {% unless include.compact %}{% if item.detail %}<p class="service-detail">{{ item.detail | escape }}</p>{% endif %}{% endunless %}
+  </li>
+  {% endfor %}
+</ul>

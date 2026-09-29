@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="home-layout">
+  {% include profile.html %}
+  <div class="home-content">
+    <div class="biography">
+      {{ content | local_links }}
+    </div>
+    <section class="home-section" id="news" aria-labelledby="news-heading">
+      <h2 id="news-heading">{% include icon.html name='news' %} News</h2>
+      {% include news.html limit=site.news_limit %}
+      <p class="section-more"><a href="{{ '/news/' | site_url }}">See more…</a></p>
+    </section>
+    <section class="home-section" id="research" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">{% include icon.html name='book' %} Selected Publications</h2>
+      {% include publications.html selected=true %}
+      <p class="section-more"><a href="{{ '/publications/' | site_url }}">See more…</a></p>
+    </section>
+    <section class="home-section" id="reviewing" aria-labelledby="reviewing-heading">
+      <h2 id="reviewing-heading">{% include icon.html name='review' %} Academic Reviewing</h2>
+      {% include reviewing.html %}
+    </section>
+    <section class="home-section" id="service" aria-labelledby="service-heading">
+      <h2 id="service-heading">{% include icon.html name='community' %} Service &amp; Community</h2>
+      {% include service.html compact=true %}
+      <p class="section-more"><a href="{{ '/service/' | site_url }}">See more…</a></p>
+    </section>
+  </div>
+</div>
